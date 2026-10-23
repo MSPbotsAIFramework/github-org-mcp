@@ -101,10 +101,10 @@ In `gateway` mode (default), every `POST /mcp` request must carry **both** heade
 | `X-GitHub-Token: <oauth_access_token>` | `Authorization: Bearer <oauth_access_token>` |
 | `X-GitHub-Org: <org_slug>` | URL path segment `.../orgs/<org_slug>/...` |
 
-| Header | 类型 (Type) | 是否必填 (Required) | 默认值 (Default) | 枚举值 (Enum) | 字段描述 (Description) | Example |
+| Header | Type | Required | Default | Allowed values | Description | Example |
 |---|---|---|---|---|---|---|
-| `X-GitHub-Token` | string | 必填 (Yes) | 无 (none) | 无 (none) | GitHub OAuth access token; mapped to `Authorization: Bearer`. OAuth flow handled upstream. | `gho_16C7e42F292c6912E7710c838347Ae178B4a` |
-| `X-GitHub-Org` | string | 必填 (Yes) | 无 (none) | 无 (none) | GitHub organization login/slug the tools operate on. | `my-company` |
+| `X-GitHub-Token` | string | Yes | None | None | GitHub OAuth access token; mapped to `Authorization: Bearer`. OAuth flow handled upstream. | `gho_16C7e42F292c6912E7710c838347Ae178B4a` |
+| `X-GitHub-Org` | string | Yes | None | None | GitHub organization login/slug the tools operate on. | `my-company` |
 
 > The header names are configurable via `GITHUB_TOKEN_HEADER` / `GITHUB_ORG_HEADER`.
 
